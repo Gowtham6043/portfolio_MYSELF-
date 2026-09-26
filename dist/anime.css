@@ -1,0 +1,406 @@
+/* Anime art direction: neon night, strong ink frames, offset panel shadows. */
+:root {
+  --bg:#0b0c1b;
+  --panel:#14172c;
+  --line:#323a60;
+  --text:#f5f4ff;
+  --muted:#b9bdd6;
+  --accent:#68edff;
+  --pink:#ff86b7;
+  --violet:#a89aff
+}
+
+body {
+  background:radial-gradient(ellipse at 95% 4%,#45247644,transparent 30%),radial-gradient(ellipse at 0% 45%,#12394933,transparent 40%),var(--bg)
+}
+
+header {
+  border-color:#46456b
+}
+
+.wordmark {
+  font-style:italic;
+  text-shadow:3px 2px 0 #7951b755
+}
+
+nav a {
+  font-weight:500
+}
+
+.nav-contact {
+  border-color:#786aa3;
+  border-radius:3px
+}
+
+.hero {
+  padding-top:36px
+}
+
+.hero>.eyebrow {
+  color:#c2c2dc
+}
+
+.hero-title {
+  grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);
+  gap:48px;
+  margin-top:32px;
+  align-items:center
+}
+
+.hero-copy {
+  min-width:0
+}
+
+.hero-kicker {
+  display:inline-block;
+  padding:6px 12px;
+  background:#27203e;
+  border-left:3px solid var(--pink);
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:1.6px;
+  color:#ded7fa
+}
+
+.hero-title h1 {
+  font-weight:800;
+  font-size:clamp(40px,4.7vw,65px);
+  line-height:1.13;
+  letter-spacing:-1.8px;
+  margin:24px 0
+}
+
+h1 em {
+  color:var(--accent);
+  text-shadow:3px 3px 0 #213858
+}
+
+.hero-bottom {
+  display:block
+}
+
+.hero-bottom p {
+  font-size:17px;
+  max-width:490px;
+  line-height:1.8
+}
+
+.hero-bottom .button {
+  margin-top:12px
+}
+
+.button {
+  border-radius:2px;
+  box-shadow:5px 5px 0 #3d4481;
+  background:var(--accent);
+  color:#101a32;
+  font-weight:700
+}
+
+.button:hover {
+  background:#aff7ff;
+  color:#101a32;
+  box-shadow:7px 7px 0 #6c4283
+}
+
+.anime-panel {
+  position:relative;
+  isolation:isolate;
+  margin:0;
+  border:2px solid #889ee1;
+  box-shadow:10px 10px 0 #312849;
+  transform:rotate(1.3deg);
+  background:#111525;
+  overflow:hidden;
+  aspect-ratio:4/5
+}
+
+.anime-panel img {
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center 38%;
+  animation:anime-drift 12s ease-in-out infinite alternate
+}
+
+.anime-panel figcaption {
+  position:absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:16px 18px;
+  border-top:1px solid #8cabd066;
+  background:#0b0c1be8;
+  color:#eef4ff;
+  font-weight:700;
+  letter-spacing:2px;
+  font-size:12px
+}
+
+.motion-toolbar {
+  margin-top:25px
+}
+
+.motion-toggle {
+  border-radius:2px
+}
+
+.discipline {
+  color:#c1bfdc;
+  padding:20px 0;
+  letter-spacing:1.5px;
+  border-color:#454362
+}
+
+.discipline span:nth-child(2) {
+  color:var(--pink)
+}
+
+h2 {
+  font-weight:700;
+  letter-spacing:-1.5px
+}
+
+.section-heading h2:after {
+  content:"";
+  display:block;
+  width:62px;
+  height:4px;
+  background:var(--pink);
+  margin-top:20px;
+  transform:skewX(-24deg)
+}
+
+.featured {
+  border:1px solid #657291;
+  border-radius:3px;
+  box-shadow:8px 8px 0 #25203c
+}
+
+.feature-panel {
+  background:linear-gradient(145deg,#202444,#112638)
+}
+
+.feature-panel>.eyebrow {
+  color:#afedff
+}
+
+.pipeline li {
+  border-color:#4a4f74
+}
+
+.pipeline li>span {
+  background:#162139;
+  border-color:#64a3b3
+}
+
+.pipeline small,.incubation span {
+  color:#bdc5e6
+}
+
+.pipeline:before {
+  background:linear-gradient(#536394,var(--accent),#b191ff);
+  background-size:100% 200%
+}
+
+.project {
+  border-radius:3px;
+  border-color:#454569;
+  box-shadow:5px 5px 0 #1f1b35;
+  background:linear-gradient(140deg,#1c1d36,#111625)
+}
+
+.project:nth-child(2),.project:nth-child(3) {
+  border-top:3px solid #a292dc
+}
+
+.project:nth-child(1),.project:nth-child(4) {
+  border-top:3px solid #4bb9c8
+}
+
+.project-meta {
+  color:#bcc6e2
+}
+
+.project h3 {
+  font-weight:650
+}
+
+.tags span {
+  border-color:#414971;
+  background:#101628;
+  color:#d1ddf0;
+  border-radius:2px
+}
+
+.project:hover,.featured:hover {
+  border-color:#9dbbe2
+}
+
+.role h4 {
+  color:var(--pink)
+}
+
+.role-date {
+  color:#b2b8d8
+}
+
+.role {
+  position:relative
+}
+
+.role:hover {
+  background:#8585dc06
+}
+
+.education {
+  border-color:var(--pink)
+}
+
+.toolkit .network-graphic {
+  max-width:310px;
+  margin:0 auto 35px;
+  background:radial-gradient(ellipse,#2b486822,transparent 70%)
+}
+
+.network-edge {
+  stroke:#535c89
+}
+
+.network-node {
+  fill:#17243c
+}
+
+.network-label {
+  fill:#cbd9f7
+}
+
+.contact {
+  border-top:2px solid #625477;
+  background:radial-gradient(ellipse at 80% 50%,#4c287833,transparent 65%)
+}
+
+.contact h2 {
+  font-weight:800
+}
+
+.socials a:hover {
+  color:var(--pink)
+}
+
+footer {
+  border-color:#414465
+}
+
+.skip {
+  color:#0b0c1b
+}
+
+.button:focus-visible,.nav-contact:focus-visible {
+  outline-color:var(--pink)
+}
+
+@keyframes anime-drift {
+  from {
+    transform:scale(1.01)
+  }
+
+  to {
+    transform:scale(1.065)
+  }
+
+}
+
+@keyframes pipeline-pulse {
+  0%,100% {
+    border-color:#65719e
+  }
+
+  40% {
+    border-color:#68edff;
+    background:#264768
+  }
+
+}
+
+@media(max-width:1000px) {
+  .hero-title {
+    gap:28px;
+    grid-template-columns:minmax(0,1.1fr) minmax(230px,.9fr)
+  }
+
+  .hero-title h1 {
+    font-size:clamp(38px,4.9vw,56px)
+  }
+
+}
+
+@media(max-width:760px) {
+  .hero-title {
+    grid-template-columns:1fr;
+    gap:38px
+  }
+
+  .hero-title h1 {
+    font-size:clamp(36px,8.5vw,56px)
+  }
+
+  .anime-panel {
+    width:100%;
+    max-width:430px;
+    margin:0 auto;
+    aspect-ratio:5/4;
+    transform:none;
+    box-shadow:6px 6px 0 #312849
+  }
+
+  .anime-panel img {
+    object-position:center 35%
+  }
+
+  .hero {
+    padding-top:30px
+  }
+
+  .hero-kicker {
+    font-size:12px
+  }
+
+  .discipline {
+    gap:14px
+  }
+
+  .section-heading h2:after {
+    margin-top:14px
+  }
+
+  .featured {
+    box-shadow:5px 5px 0 #25203c
+  }
+
+  .toolkit .network-graphic {
+    max-width:260px
+  }
+
+  .hero-title h1 br {
+    display:none
+  }
+
+  .hero-bottom p {
+    font-size:16px
+  }
+
+}
+
+@media(prefers-reduced-motion:reduce) {
+  .anime-panel img {
+    animation:none
+  }
+
+}
+
+html.motion-paused .anime-panel img {
+  animation-play-state:paused
+}
+

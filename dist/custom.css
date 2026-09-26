@@ -1,0 +1,24 @@
+/* YOUR CUSTOMIZATIONS — loaded last, so these rules override the theme. */
+/* Change these colors, save, and refresh the browser. */
+:root {
+  --bg: #0b0c1b;
+  --panel: #14172c;
+  --line: #323a60;
+  --text: #f5f4ff;
+  --muted: #b9bdd6;
+  --accent: #68edff;
+  --pink: #ff86b7;
+  --violet: #a89aff;
+}
+
+/* Example: uncomment to make project corners rounder.
+.project {
+  border-radius: 16px;
+}
+*/
+
+/* Example: adjust hero artwork cropping.
+.anime-panel img {
+  object-position: center 30%;
+}
+*/
