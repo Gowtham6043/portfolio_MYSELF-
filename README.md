@@ -1,4 +1,4 @@
-# Gowtham Portfolio — editable in VS Code
+# Gowtham Portfolio 
 
 Your complete anime-themed portfolio, with readable HTML/CSS, artwork, animations,
 and a Python preview server. No npm, pip packages, API keys, or build step required.
